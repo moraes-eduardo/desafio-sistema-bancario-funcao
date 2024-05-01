@@ -1,33 +1,29 @@
 ## Sobre
-
 Esse projeto é um dos desafios de código propostos no Bootcamp DIO, Python AI Backend Developer (Vivo).
 
-
 ### Módulo
-
 O desafio 'Criando um Sistema Bancário com Python', sob a responsabilidade do professor Guilherme Arthur de Carvalho.
 
-
 ## Tecnologias
-
 - Python 3 (básico)
 
-
 ## Objetivo
-
 Separar as funções existentes de saque, depósito e extrato em funções. Criar duas novas funções: cadastrar usuário (cliente) e cadastrar conta bancária.
 
-### Operação de depósito
-Deve ser possível depositar valores positivos para uma conta bancária. A v1 do projeto trabalha com apenas 1 usuário, então não é necessário se preocupar com a identificação do número da agência e nem da conta bancária.
+## Desafio
+Precisamos deixar nosso código mais modularizado, para isso vamos criar funções para as operações existente: sacar, depositar e visualizar histórico. Além disso, para a versão 2 do nosso sistema precisamos criar duas novas funções: criar usuário (cliente do banco) e criar conta corrente (vincular com usuário).
 
-Todos os depósitos devem ser armazenados numa variável e exibidos na operação de extrato.
+## Separação em funções
+Devemos criar funções para todas as operações do sistema. Para exercitar tudo o que aprendemos neste módulo, cada função vai ter uma regra na passagem de argumentos. O retorno e a forma como serão chamadas, pode ser definida por você da forma que achar melhor.
 
 ### Operação de saque
-O sistema deve permitir realizar 5 saques diários com limite máximo de R$500,00/saque. Caso o usuário não tenha saldo em conta, o sistema deve exibir uma mensagem informando que não será possível sacar dinheiro por falta de saldo.
+A função saque deve receber os argumentos apenas por nome (keyword only). Sugestão de argumentos: saldo, valor, extrato, limite, numero_saques. Sugestão de retorno: saldo e extrato
 
-Todos os saques devem ser armazenados numa variável e exibidos na operação de extrato.
+### Operação de depósito
+A função depósito deve receber os argumentos apenas por posição (positional only). Sugestão de argumentos: saldo, valor, extrato. Sugestão de retorno: saldo e extrato.
 
 ### Operação de extrato
-Deve listar todos os depósitos e saques realizados na conta. No fim da lista, deve ser exibido o saldo atual da conta.
+A função extrato deve receber os argumentos por posição e nome (positional only e keyword only). Argumentos posicionais: saldo, argumentos nomeados: extrato.
 
-Os valores devem ser exibidos utilizando o formato R$ xxx.xx.
+### Novas funções
+Precisamos criar duas novas funções: criar usuário e criar conta corrente. Fique a vontade para adicionar mais funções, exemplo: listar contas.
