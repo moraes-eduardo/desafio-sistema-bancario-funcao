@@ -5,13 +5,13 @@ import textwrap
 def menu():
     menu = """\n
     ===== QUAL OPERAÇÃO DESEJA EXECUTAR? =====
-    [U] CRIAR USUÁRIO
-    [C] CRIAR CONTA
-    [D] DEPOSITAR VALOR
-    [S] SACAR VALOR
-    [E] EXIBIR EXTRATO
-    [L] LISTAR CONTAS
-    [Q] SAIR DA CONTA
+    [U] \tCRIAR USUÁRIO
+    [C] \tCRIAR CONTA
+    [D] \tDEPOSITAR VALOR
+    [S] \tSACAR VALOR
+    [E] \tEXIBIR EXTRATO
+    [L] \tLISTAR CONTAS
+    [Q] \tSAIR DA CONTA
 
     >>> """
     return input(textwrap.dedent(menu))
